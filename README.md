@@ -1,3 +1,9 @@
+# Sobre a Cammino Digital
+
+Somos a Cammino Digital, um grupo de pessoas que se dedicam ao universo do E-commerce. Com o propósito de pensar, agir e se relacionar com todos os processos que envolvem um projeto digital é que, em 2006, dois sonhadores fundaram a Cammino. 
+
+Hoje somos uma empresa especializada em e-commerce, que acredita em dados, técnicas, insights e pessoas para entregar serviços estratégicos que trazem mais resultados aos clientes.
+
 # Teste de Front-end
 
 Olá Dev! Tudo bem?
@@ -10,7 +16,7 @@ Então, vamos ao teste!
 
 # Instruções
 
-Criar o HTML/CSS (desktop e responsivo) com base no layout (deverá ser totalmente navegável).
+Você deverá criar o HTML/CSS (desktop e responsivo) com base no layout (deverá ser totalmente navegável).
 
 Desejamos avaliar o seu nível de conhecimento em design responsivo (Responsive Web Design) usando HTML5, CSS3 e grids. Caso se sinta confortável, utilize pré-processadores (Less, SASS ou Stylus).
 
