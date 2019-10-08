@@ -21,3 +21,10 @@ Você deverá criar o HTML/CSS (desktop e responsivo) com base no layout (dever�
 Desejamos avaliar o seu nível de conhecimento em design responsivo (Responsive Web Design) usando HTML5, CSS3 e grids. Caso se sinta confortável, utilize pré-processadores (Less, SASS ou Stylus).
 
 Nós iremos avaliar a qualidade do seu código, sua semântica e percepção para o mobile (responsivo).
+
+### O Desafio
+
+A aplicação deve mostrar primeiramente uma listagem de produtos com todas informações conforme o layout. além claro, do header e footer da aplicação.
+
+Layout das páginas:
+> Listagem de produtos https://cammino.digital
