@@ -14,7 +14,7 @@ Este teste tem como objetivo avaliar seu conhecimento, criatividade e principalm
 
 Então, vamos ao teste!
 
-# Instruções
+### Instruções
 
 Você deverá criar o HTML/CSS (desktop e responsivo) com base no layout (deverá ser totalmente navegável).
 
@@ -24,7 +24,7 @@ Nós iremos avaliar a qualidade do seu código, sua semântica e percepção par
 
 ### O Desafio
 
-A aplicação deve mostrar primeiramente uma listagem de produtos com todas informações conforme o layout. além claro, do header e footer da aplicação.
+A aplicação deverá mostrar uma listagem de produtos com todas informações conforme o layout, além claro, do header e footer da aplicação.
 
 Layout das páginas:
 > Listagem de produtos https://cammino.digital
