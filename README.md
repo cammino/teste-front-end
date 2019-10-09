@@ -38,7 +38,7 @@ Link para download do Figma App
 
 ### Conclusão e apresentação
 
-Ao finalizar o teste, por favor, solicite um pull request.
+Ao finalizar o teste, por favor, faça um fork deste repositório e solicite um pull request.
 
 Em caso de dúvidas, envie um e-mail para suporte@cammino.com.br ou pelo WhatsApp (17) 3211-9936
 
