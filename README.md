@@ -26,7 +26,7 @@ Nós iremos avaliar a qualidade do seu código, sua semântica e percepção par
 
 A aplicação deverá mostrar uma listagem de produtos com todas informações conforme o layout, além claro, do header e footer da aplicação.
 
-Layout das páginas:
+Layout da página:
 > Listagem de produtos https://www.figma.com/file/Limwn5rDzxJvvNXZsUvpRf/layout_teste_frontend
 
 ### Conclusão e apresentação
