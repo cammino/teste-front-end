@@ -29,10 +29,12 @@ A aplicação deverá mostrar uma listagem de produtos com todas informações c
 Layout da página (Figma versão online):
 > Listagem de produtos https://www.figma.com/file/Limwn5rDzxJvvNXZsUvpRf/layout_teste_frontend
 
-Também é possível fazer o download do app (Figma) para seu desktop (A performance pode ser consideravelmente melhor)
+Também é possível fazer o download do app (Figma) para seu desktop (A performance pode ser consideravelmente melhor).
 
-Caso opte por utilziar o app, acesse o link abaixo, faça seu cadastro/login e aguarde o arquivo ser carregado. Após isso, você poderá fazer o download normalmente e quando for feito o login pelo app, o arquivo já estará sincronizado com sua conta.
-> Listagem de produtos https://www.figma.com/file/Limwn5rDzxJvvNXZsUvpRf/layout_teste_frontend
+Antes de fazer o download, faça seu cadastro/login e aguarde o arquivo ser carregado. Após isso, você poderá fazer o download normalmente e uma vez logado no app, o arquivo já estará sincronizado com sua conta.
+
+Link para download do Figma App
+> Link para download https://www.figma.com/downloads/
 
 ### Conclusão e apresentação
 
