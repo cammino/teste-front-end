@@ -27,4 +27,12 @@ Nós iremos avaliar a qualidade do seu código, sua semântica e percepção par
 A aplicação deverá mostrar uma listagem de produtos com todas informações conforme o layout, além claro, do header e footer da aplicação.
 
 Layout das páginas:
-> Listagem de produtos https://cammino.digital
+> Listagem de produtos https://www.figma.com/file/Limwn5rDzxJvvNXZsUvpRf/layout_teste_frontend
+
+### Conclusão e apresentação
+
+Ao finalizar o teste, por favor, solicite um pull request.
+
+Em caso de dúvidas, envie um e-mail para suporte@cammino.com.br
+
+Desejamos à você, boa sorte!
