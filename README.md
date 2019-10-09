@@ -16,9 +16,9 @@ Então, vamos ao teste!
 
 ### Instruções
 
-Você deverá criar o HTML/CSS (desktop e responsivo) com base no layout (deverá ser totalmente navegável).
+Você deverá criar o HTML/CSS (desktop e responsivo) com base no layout.
 
-Desejamos avaliar o seu nível de conhecimento em design responsivo (Responsive Web Design) usando HTML5, CSS3 e grids. Caso se sinta confortável, utilize pré-processadores (Less, SASS ou Stylus).
+Desejamos avaliar o seu nível de conhecimento em design responsivo (Responsive Web Design) usando HTML5, CSS3 e JavaScript (Banner principal). Caso se sinta confortável, utilize pré-processadores (Less, SASS ou Stylus).
 
 Nós iremos avaliar a qualidade do seu código, sua semântica e percepção para o mobile (responsivo).
 
@@ -26,13 +26,18 @@ Nós iremos avaliar a qualidade do seu código, sua semântica e percepção par
 
 A aplicação deverá mostrar uma listagem de produtos com todas informações conforme o layout, além claro, do header e footer da aplicação.
 
-Layout da página:
+Layout da página (Figma versão online):
+> Listagem de produtos https://www.figma.com/file/Limwn5rDzxJvvNXZsUvpRf/layout_teste_frontend
+
+Também é possível fazer o download do app (Figma) para seu desktop (A performance pode ser consideravelmente melhor)
+
+Caso opte por utilziar o app, acesse o link abaixo, faça seu cadastro/login e aguarde o arquivo ser carregado. Após isso, você poderá fazer o download normalmente e quando for feito o login pelo app, o arquivo já estará sincronizado com sua conta.
 > Listagem de produtos https://www.figma.com/file/Limwn5rDzxJvvNXZsUvpRf/layout_teste_frontend
 
 ### Conclusão e apresentação
 
 Ao finalizar o teste, por favor, solicite um pull request.
 
-Em caso de dúvidas, envie um e-mail para suporte@cammino.com.br
+Em caso de dúvidas, envie um e-mail para suporte@cammino.com.br ou pelo WhatsApp (17) 3211-9936
 
 Desejamos à você, boa sorte!
