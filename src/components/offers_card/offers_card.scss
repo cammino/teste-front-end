@@ -1,0 +1,192 @@
+@media all and (min-width: 240px){
+
+  h2.card-title,
+  .card .card-header,
+  .card-header .cover,
+  .card-body,
+  .card-body .price-type,
+  .card-footer,
+  .card-footer .btn-purchase{
+    width: 100%;
+  }
+
+  .card,
+  .card .card-header,
+  .card .card-body{
+    flex-direction: column;
+  }
+
+  .card,
+  .card .card-body,
+  .card .card-header,
+  .card-body .price-type{
+    align-items: center;
+  }
+
+  .card .card-header,
+  .card-body .price-type,
+  .card .card-footer,
+  .btn-purchase{
+    justify-content: center;
+  }
+
+  .card .card-body,
+  .card-footer .btn-purchase{
+    padding: 10px;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 250px;
+    margin: 20px auto;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    h2.card-title{
+      height: 30px;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: .7rem;
+      line-height: 12px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+
+    .card-header{
+      position: relative;
+      height: 59%;
+      padding: 10px 10px 20px 10px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #d4d4d4;
+      transition: all .2s;
+
+      .cover {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #0001;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        opacity: 0;
+        transition: opacity .2s;
+      }
+
+      .offer-tip{
+        font-size: .65rem;
+        font-weight: 600;
+        background-color: #5c5c5c;
+        color: #fff;
+        margin-bottom: 20px;
+        margin-left: auto;
+        padding: 5px;
+        border-radius: 3px;
+        z-index: 1;
+
+      }
+
+      img{
+        width: 80%;
+        height: 80%;
+      }
+
+    }
+
+    .card-body{
+      .average-rater{
+        margin-top: 10px;
+
+        .fa-star{
+          letter-spacing: 4px;
+          color: #d4d4d4;
+
+          &.active {
+            color: #E2DAA7;
+          }
+        }
+
+      }
+
+      .price-type{
+        margin-top: 10px;
+
+        .spot-price{
+          color: #4285F4;
+          font-size: .85rem;
+          font-weight: 600;
+          padding-left: 3.5px;
+
+        }
+
+        .through-pice{
+          text-decoration: line-through;
+          font-weight: 300;
+          font-size: .85rem;
+          padding-right: 3.5px;
+        }
+
+      }
+
+      .foward-price {
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-top: 3px;
+      }
+
+    }
+  }
+
+  .card-footer {
+    height: 65px;
+    padding: 10px 10px 5px 10px;
+
+    .btn-purchase{
+      height: 90%;
+      border: 1px solid #4285F4;
+      color: #4285F4;
+      font-weight: 600;
+      border-radius: 5px;
+      display: none;
+      transition: all .2s;
+    }
+  }
+
+  .card:hover{
+    border: 1px solid #d4d4d4;
+    -webkit-box-shadow: 0 10px 6px -6px #d4d4d4;
+    -moz-box-shadow: 0 10px 6px -6px #d4d4d4;
+    box-shadow: 0 10px 6px -6px #d4d4d4;
+  }
+
+  .card:hover .card-header{
+    border-bottom: transparent;
+  }
+
+  .card:hover .offer-tip{
+    background-color: #fff;
+    border: 1px solid #d63f3f;
+    color:#d63f3f;
+  }
+
+  .card:hover .cover  {
+    opacity: 1;
+  }
+
+  .card:hover .btn-purchase{
+    display: flex;
+  }
+
+  .btn-purchase:hover{
+    color: #fff;
+    background-color: #4285F4;
+  }
+}
+
+@media all and (min-width: 480px){
+    .card{
+      width: 41.32%;
+    }
+}
+

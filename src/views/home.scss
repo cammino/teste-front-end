@@ -1,0 +1,23 @@
+@media all and (min-width: 240px){
+
+  h1, .home,
+    .home section{
+      width: 100%;
+    }
+
+    .home {
+      section {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+}
+
+@media all and (min-width: 1024px){
+    .home{
+      section{
+        padding: 0 80px;
+      }
+    }
+}
