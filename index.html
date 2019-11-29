@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Teste Front-end Cammino</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script>
+      var app = angular.module('eCommerce', []);
+      app.controller('productCtrl', function($scope) {
+        $scope.products = [
+          {name: "Bala de Gengibre",                          price: 12.90,  normal_price: null,   picture: "imgs/produto2.png", rating: 4,    installments: 2},
+          {name: "Neon Bluetooth Wireless On-Ear Headphones", price: 12.90,  normal_price: 14.90,  picture: "imgs/produto1.png", rating: 3,    installments: 2},
+          {name: "Caneca Branca Mug Mockup",                  price: 300.00, normal_price: 350.00, picture: "imgs/produto3.png", rating: 4,    installments: 6},
+          {name: "Bala de Gengibre",                          price: 12.90,  normal_price: null,   picture: "imgs/produto2.png", rating: 4,    installments: 2},
+          {name: "Neon Bluetooth Wireless On-Ear Headphones", price: 12.90,  normal_price: 14.90,  picture: "imgs/produto1.png", rating: 1,    installments: 2},
+          {name: "Neon Bluetooth Wireless On-Ear Headphones", price: 12.90,  normal_price: 14.90,  picture: "imgs/produto1.png", rating: null, installments: 2}
+        ];
+        $scope.getNumber = function(num) {
+          return new Array(num);
+        }
+      });
+  </script>
+  <style>
+    body {
+      overflow-x: hidden;
+      font-family: "Montserrat", sans-serif;
+    }
+    .navbar {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    .nav-item {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    #carrosel .carousel-item img {
+      width: 100%;
+      height: 100%;
+    }
+    .card {
+      margin: 3rem;
+      padding: 1;
+    }
+    .card .card-img-top {
+      height: 20rem;
+    }
+    .card:hover {
+      border: ridge;
+    }
+    .navbar button {
+      border-style: solid;
+      border-width: 0.05rem;
+      border-color: black;
+    }
+    @media only screen and (min-width: 800px) {
+      #carrosel .carousel-item img {
+        width: 86rem;
+        height: 42rem;
+      }
+    }
+
+  </style>
+</head>
+<body ng-app="eCommerce" ng-controller="productCtrl">
+  <div class="row">
+    <nav class="col-sm-6">
+      <div class="col-sm-12 h3" href="#">Demo Store <img src="imgs/símbolo-outline.png" alt="outline_logo"></div>
+    </nav>
+    <div class="input-group-append input-group col-sm-6">
+      <input class="form-control col-sm-12" type="text" placeholder="o que precisa encontrar?">
+      <span class="">
+        <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+      </span>
+    </div>
+  </div>
+  <div class="row">
+    <nav class="navbar navbar-expand-sm navbar col-12">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Novidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blusas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Calças</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Casacos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Macacões</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Saias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shorts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vestidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Outlet</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="row">
+    <div id="carrosel" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#carrosel" data-slide-to="0" class="active"></li>
+        <li data-target="#carrosel" data-slide-to="1"></li>
+        <li data-target="#carrosel" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/banner.png" alt="banner1">
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/banner.png" alt="banner2">
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/banner.png" alt="banner3">
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/banner.png" alt="banner4">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carrosel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carrosel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <h1 class="col-12 pt-5 colorGrey text-center">Ofertas em destaque</h1>
+  </div>
+  <div class="row">
+    <div class="card col-sm-3" ng-repeat="product in products">
+        <div class="row"> 
+            <div ng-if="product.normal_price" class="btn btn-dark ml-auto">%{{100 - ((product.price / product.normal_price) * 100) | number : 2}} OFF</div>&nbsp;
+        </div>
+      <img class="card-img-top" src="{{product.picture}}">
+      <div>
+        <div class="row">
+            <h5 class="col-12 h5 text-center">{{product.name}}</h5>&nbsp;
+        </div>
+        <div class="row mt-auto">
+            <div class="col-12 text-center">
+              <i ng-if="product.rating" ng-repeat="x in [].constructor(product.rating) track by $index" class="fa fa-star text-warning"></i>&nbsp;
+              <i ng-if="product.rating" ng-repeat="x in [].constructor(5 - product.rating) track by $index" class="fa fa-star-o text-warning no-padder"></i>&nbsp;
+            </div>          
+        </div>
+        <div class="row">
+            <div class="col-12 text-center h5"><span class="text-dark-lter" ng-if="product.normal_price"><del>{{product.normal_price | currency : 'R$' : 2}}</del> | </span> <span class="text-info">{{product.price| currency : 'R$' : 2}}</span></div>
+            <div ng-if="product.installments" class="col-12 text-center">ou até {{product.installments}}X de {{product.price / product.installments | currency: 'R$' : 2}}</div>          &nbsp;
+        </div>
+        <div class="row mb-3">
+          <div class="btn btn-outline-info m-auto">Comprar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="row">
+    <div class="jumbotron text-center col-12" style="margin-bottom:0">
+      <img src="imgs/cammino.png">
+    </div>
+  </footer>
+</body>
+</html>
