@@ -20,7 +20,7 @@ body {
 }
 
 .button-search {
-  background-image: url(../imagens/lupa.png);
+  background-image: url(lupa.png);
   width: 20px;
   height: 21px;
   border: transparent;
@@ -108,7 +108,7 @@ body {
   width: 50px;
   height: 100%;
   -webkit-tap-highlight-color: transparent;
-  background: url("../imagens/arrow.png") 50% 50% no-repeat;
+  background: url("arrow.png") 50% 50% no-repeat;
   align-items: center;
 }
 .carousel-wrapper .carousel-item .arrow .arrow-prev {
@@ -368,7 +368,7 @@ body {
   }
 
   .carousel-wrapper .carousel-item .arrow {
-    background: url("../imagens/arrow.png") 50% 50% no-repeat;
+    background: url("arrow.png") 50% 50% no-repeat;
     background-size: 25px;
     background-position: 0px 50%;
   }
