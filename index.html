@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/09ff1fabb3.js" crossorigin="anonymous"></script>
+    <title>Teste Front-End</title>
+</head>
+    <body>
+<!--========================--> 
+<!----------HEADER ----------->
+<!--========================--> 
+        <div class="container">
+            <header>
+                <div class="header">
+                    <div class="logo-container">
+                        <button class="button btn-menu"> <i class="fa fa-bars fa-lg"> </i></button>
+                        <a class="button btn-close"> <i class="fa fa-times"></i></a>
+                        <img class="logo" src="imagens/logo.png" alt="Logo Loja Demo">
+                    </div>
+                    <div class="search-box">
+                        <input class="search" type="search" placeholder="o que precisa encontrar?">
+                        <button class="button-search"></button>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Blusas</a></li>
+                        <li><a href="#">Calças</a></li>
+                        <li><a href="#">Casacos</a></li>
+                        <li><a href="#">Macacões</a></li>
+                        <li><a href="#">Saias</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Vestidos</a></li>
+                        <li><a href="#">Outlet</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+<!--========================--> 
+<!---------CARROSSEL---------->
+<!--========================--> 
+        <div class="carousel-wrapper center">
+            <span id="target-item-1"></span>
+            <span id="target-item-2"></span>
+            <span id="target-item-3"></span>
+            <div class="carousel-item item-1">
+                <p><img src="/imagens/banner-home-1.jpg" alt="" class="image"></p>
+                <a class="arrow arrow-prev" href="#target-item-3"></a>
+                <a class="arrow arrow-next" href="#target-item-2"></a>
+            </div>
+            <div class="carousel-item item-2 light">
+                <p><img src="/imagens/banner-2.jpg" alt="" class="image"></p>
+                <a class="arrow arrow-prev" href="#target-item-1"></a>
+                <a class="arrow arrow-next" href="#target-item-3"></a>
+            </div>
+            <div class="carousel-item item-3">
+                <p><img src="/imagens/banner-3.jpg" alt="" class="image"></p>
+                <a class="arrow arrow-prev" href="#target-item-2"></a>
+                <a class="arrow arrow-next" href="#target-item-1"></a>
+            </div>
+        </div>
+<!--========================-->       
+<!----------PRODUTOS---------->
+<!--========================--> 
+        <div class="container">
+            <div class="ofertas">
+                <h1>Ofertas em Destaque</h1>
+            </div>
+        </div>
+        <section class="products clearfix">   
+            <div class="product-box">
+                <img src="../imagens/tenis.jpg" alt="Tenis Nike" class="product-image">
+                <h2 class="product-name">Tênis Nike</h2>
+                <div class="avaliation-star">
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                </div>
+                <div class="price-box">
+                    <div class="prices">
+                        <h2 class="special-price">R$ 12,90</h2>
+                    </div>
+                    <h3>ou até 2x de R$ 6,50</h3>
+                </div>
+                <button class="purchase-button">COMPRAR</button>
+            </div>
+            <div class="product-box">
+                <div class="discount">
+                    <p>10% OFF</p>
+                </div>
+                <img src="../imagens/fone.jpg" alt="Fone" class="product-image">
+                <h2 class="product-name">Neon Bluetooth Wireless On-Ear<br>Headphones</h2>
+                <div class="price-box">
+                    <div class="prices">
+                        <span class="price">R$ 14,90</span><span class="price-division">|</span><h2 class="special-price">R$ 12,90</h2>
+                    </div>
+                    <h3>ou até 2x de R$ 6,50</h3>
+                </div>
+                <button class="purchase-button">COMPRAR</button>
+            </div>
+            <div class="product-box">
+                <div class="discount discount-red">
+                    <p>15% OFF</p>
+                </div>
+                <img src="../imagens/caneca.jpg" alt="Caneca" class="product-image">
+                <h2 class="product-name">Caneca Branca Mug Mockup</h2>
+                <div class="avaliation-star">
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                </div>
+                <div class="price-box">
+                    <div class="prices">
+                        <span class="price">R$ 350,00</span><span class="price-division">|</span><h2 class="special-price">R$ 300,00</h2>
+                    </div>
+                    <h3>ou até 6x de R$ 50,00</h3>
+                </div>
+                <button class="purchase-button">COMPRAR</button>
+            </div>
+            <div class="product-box">
+                <img src="../imagens/tenis.jpg" alt="Tenis Nike" class="product-image">
+                <h2 class="product-name">Tênis Nike</h2>
+                <div class="avaliation-star">
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                    <i class="fas fa-star" class="stars"></i>
+                </div>
+                <div class="price-box">
+                    <h2 class="special-price">R$ 12,90</h2>
+                    <h3>ou até 2x de R$ 6,50</h3>
+                </div>
+                <button class="purchase-button">COMPRAR</button>
+            </div>
+            <div class="product-box">
+                <div class="discount">
+                    <p>10% OFF</p>
+                </div>
+                <img src="../imagens/fone.jpg" alt="Fone" class="product-image">
+                <h2 class="product-name">Neon Bluetooth Wireless On-Ear<br>Headphones</h2>
+                <div class="price-box">
+                    <div class="prices">
+                        <span class="price">R$14,90</span><span class="price-division">|</span><h2 class="special-price">R$ 12,90</h2>
+                    </div>
+                    <h3>ou até 2x de R$ 6,50</h3>
+                </div>
+                <button class="purchase-button">COMPRAR</button>
+            </div>
+            <div class="product-box">
+                <div class="discount">
+                    <p>10% OFF</p>
+                </div>
+                <img src="../imagens/fone.jpg" alt="Fone" class="product-image"> 
+                <h2 class="product-name">Neon Bluetooth Wireless On-Ear<br>Headphones</h2>
+                <div class="price-box">
+                    <div class="prices">
+                        <span class="price">R$14,90</span><span class="price-division">|</span><h2 class="special-price">R$ 12,90</h2>
+                    </div>
+                    <h3>ou até 2x de R$ 6,50</h3>
+                </div>
+                <button class="purchase-button">COMPRAR</button>
+            </div>
+        </section>
+<!--========================--> 
+<!-----------SCRIPT----------->
+<!--========================-->
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+    $(window).resize(function() {
+    if ($(this).width() > 681) {
+        $(".nav-menu").show();
+    } else {
+        $(".nav-menu").hide();
+    }
+    });
+    $(".btn-close").hide()
+    $(".btn-menu").click(function(){
+        $(".nav-menu").show();
+        $(".btn-close").show();
+        $(".btn-menu").hide();
+    });
+    $(".btn-close").click(function(){
+        $(".nav-menu").hide();
+        $(".btn-close").hide();
+        $(".btn-menu").show();
+    });
+</script>
+<!--========================--> 
+<!-----------RODAPE----------->
+<!--========================--> 
+        <footer>
+            <div class="footer">
+                <img src="../imagens/cammino-rodape.png" alt="Logo Rodape">
+            </div>
+        </footer>
+    </body>
+</html>

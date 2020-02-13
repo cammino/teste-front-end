@@ -1,0 +1,334 @@
+*
+    margin: 0
+    padding: 0
+
+body 
+    font-family: Monserrat, sans-serif
+
+.container
+    max-width: 1180px
+    margin: 0 auto
+    box-sizing: border-box
+//===========================//
+// ------- HEADER --------- //
+//===========================//
+.logo
+    width: 141px
+    height: 26px
+    margin-top: 9px
+    
+.button-search
+    background-image: url(../imagens/lupa.png)
+    width: 20px
+    height: 21px
+    border: transparent
+    background-color: #ffffff
+    position: relative
+    right: -94%
+    top: -46%
+
+.search
+    width: 100%
+    height: 40px
+    border-radius: 5px
+    border: 1px solid #D4D4D4
+    padding: 15px
+    
+.search-box
+    width: 500px
+
+.header
+    display: flex
+    justify-content: space-between
+    margin: 9px 0 18px 0
+
+.nav-menu
+    ul 
+        display: flex
+        justify-content: space-between
+        list-style-type: none
+        margin: 0 0 16px 0
+        padding: 0
+        li 
+            text-transform: uppercase 
+            a
+                color: #4C4C4C 
+                text-decoration: none
+                font-size: 13px
+                line-height: 16px
+                font-weight: 300
+
+.btn-menu
+    position: absolute
+    opacity: 0
+    visibility: hidden
+
+.btn-close
+    position: absolute
+    opacity: 0
+    visibility: hidden 
+//===========================//
+// ------- CARROSSEL ------- //
+//===========================//
+.image 
+    margin: auto
+    height: 100%
+    width: 100%
+    vertical-align: top
+
+.carousel-wrapper 
+    position: relative
+    width: 100%
+    height: 720px
+    .carousel-item 
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        padding: 0
+        opacity: 0
+        display: flex
+        transition: all 0.8s ease-in-out
+        .arrow 
+            position: absolute
+            top: 0
+            display: block
+            width: 50px
+            height: 100%
+            -webkit-tap-highlight-color: rgba(0,0,0,0)
+            background: url("../imagens/arrow.png") 50% 50% no-repeat
+            align-items: center
+            .arrow-prev 
+                left: 0
+        .arrow-next 
+            right: 0
+            -webkit-transform: rotate(180deg)
+                transform: rotate(180deg)
+    [id^="target-item"] 
+        display: none
+    .item-1 
+        z-index: 2
+        opacity: 1
+    *:target ~ .item-1 
+        opacity: 0
+    #target-item-1:target ~ .item-1 
+        opacity: 1
+    #target-item-2:target ~ .item-2, #target-item-3:target ~ .item-3 
+        z-index: 3
+        opacity: 1
+//===========================//
+// ------- PRODUTOS ------- //
+//===========================//
+.ofertas h1 
+    text-align: center
+    font-size: 36px
+    line-height: 44px
+    color: #796E7C
+    font-weight: 600
+    margin: 41px 0 75px 0
+
+.products
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 1180px
+    margin: 0 auto
+
+.products > div
+    flex: 0 1 380px
+   
+.product-box
+    height: 680px
+    border-radius: 4px
+    margin-bottom: 50px
+    position: relative
+    border: 1px solid #ffffff
+    .product-image
+        width: 100%
+        border-bottom: 1px solid #C5C5C5
+    .product-name 
+        color: #796E7C
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        font-weight: 600
+        margin-top: 24px
+    .avaliation-star
+        margin-top: 49px
+        display: flex
+        justify-content: center
+        i 
+            font-size: 18px
+            color: #E2DAA7
+            margin-right: 5px
+        i:nth-child(5)
+            color: #f0f0f0
+    .price-box
+        position: absolute
+        left: 16%
+        right: 16%
+        top: 76%
+        bottom: 20%
+        .prices
+            display: flex
+            justify-content: space-around
+            .price-division 
+                color: #796E7C
+                font-size: 20px
+                line-height: 24px
+                font-weight: 300
+            .price
+                color: #796E7C
+                font-size: 20px
+                line-height: 24px
+                font-weight: 300
+                text-decoration-line: line-through
+    .special-price
+        text-align: center
+        color: #4A90E2
+        font-size: 20px
+        line-height: 24px
+    h3
+        color: #796E7C
+        font-weight: 300
+        text-align: center
+        font-size: 14px
+        margin-top: 10px
+    .discount
+        background-color: rgba(79, 79, 79, 0.78)
+        width: 65px
+        height: 25px
+        border-radius: 3px
+        position: absolute 
+        left: 79.7%
+        top: 1.5%
+        p 
+            color: #ffffff
+            font-size: 12px
+            line-height: 24px
+            font-weight: 600
+            text-align: center
+    .discount-red
+        background-color: #ffffff
+        border: 1px solid #E5465A
+        box-sizing: border-box
+        p 
+            color: #E5465A
+
+.purchase-button
+    display: block
+    position: absolute
+    top: 89.5%
+    left: 5%
+    border: 1px solid #4A90E2
+    width: 341px
+    height: 50px
+    border-radius: 4px
+    color: #4A90E2
+    font-size: 16px
+    line-height: 20px
+    opacity: 0
+    visibility: hidden
+//===========================//
+// ------- HOVER ------- //
+//===========================//
+.product-box:hover
+    border: 1px solid #C5C5C5
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1)
+    .purchase-button
+        opacity: 1
+        visibility: visible
+//===========================//
+// -------- RODAPE --------- //
+//===========================//
+.footer
+    width: 100%
+    height: 94px
+    background: #FBFBFB
+    display: flex
+    img 
+        margin: auto
+    
+//===========================//
+// -------- MOBILE--------- //
+//===========================//
+
+@media screen and ( max-width: 1280px )
+    .container
+        max-width: 1024px
+    .carousel-wrapper 
+        height: 580px
+    .products
+        max-width: 1024px
+        display: flex
+        justify-content: space-around
+
+@media screen and ( max-width: 1140px )
+    .container
+        max-width: 768px
+    .carousel-wrapper
+        height: 480px
+    
+@media screen and ( max-width: 880px )
+    .carousel-wrapper
+        height: 400px
+    .container
+        max-width: 600px
+    .nav-menu ul li a 
+        font-size: 12px
+    .products
+        max-width: 600px
+    .products > div
+        flex: 0 1 280px
+    .purchase-button
+        width: 250px
+        position: absolute
+        top: 88.7%
+    .search-box
+        width: 400px
+    .product-box
+        height: 580px
+        .discount
+            left: 72.7%
+            top: 2%
+
+@media screen and ( max-width: 696px)
+    .header
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin: 0
+    .search-box
+        padding: 5px 15px 0 15px
+        width: 600px
+    .carousel-wrapper 
+        height: 350px
+    .carousel-wrapper .carousel-item .arrow
+        background: url("../imagens/arrow.png") 50% 50% no-repeat
+        background-size: 25px
+        background-position: 0px 50%
+    .nav-menu
+        display: none
+        ul
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            li 
+                padding: 5px 15px
+                font-weight: 400
+    .button
+        display: block
+        position: absolute
+        border: none
+        left: 30px
+        top: 15px
+    .btn-menu
+        font-size: 16px
+        opacity: 1
+        visibility: visible
+    .btn-close
+        font-size: 22px
+        opacity: 1
+        visibility: visible     
